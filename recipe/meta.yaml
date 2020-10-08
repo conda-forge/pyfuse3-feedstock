@@ -26,6 +26,7 @@ requirements:
     - libfuse
   run:
     - python
+    - trio >=0.15
     - libfuse
 
 test:
