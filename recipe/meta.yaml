@@ -1,5 +1,5 @@
 {% set name = "pyfuse3" %}
-{% set version = "3.2.2" %}
+{% set version = "3.2.3" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyfuse3-{{ version }}.tar.gz
-  sha256: aa4080913e6148bff1365d4aaacdc96767b87a1e178031fd9caeb5f0b9fc8cec
+  sha256: 0771e921fd2a1c36bd4ed6b74db0616f4d40c8ac68994a80f3cc8a249fa807d8
 
 build:
-  number: 1
+  number: 0
   skip: true  # [not linux64]
   script:
     - {{ PYTHON }} setup.py build_cython
