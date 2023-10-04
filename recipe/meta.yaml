@@ -11,7 +11,7 @@ source:
   sha256: 2b31fe412479f9620da2067dd739ed23f4cc37364224891938dedf7766e573bd
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux64]
   script:
     - {{ PYTHON }} setup.py build_cython
