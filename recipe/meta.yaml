@@ -12,18 +12,19 @@ source:
 
 build:
   number: 0
-  skip: true  # [not linux64]
+  skip: true  # [not linux64 or py<38]
   script:
     - {{ PYTHON }} setup.py build_cython
-    - {{ PYTHON }} -m pip install . -vv
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
+    - {{ stdlib('c') }}
   host:
     - python
     - pip
+    - setuptools
     - cython
     - libfuse
   run:
