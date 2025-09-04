@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyfuse3-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyfuse3-{{ version }}.tar.gz
   sha256: 793493f4d5e2b3bc10e13b3421d426a6e2e3365264c24376a50b8cbc69762d39
 
 build:
-  number: 2
+  number: 3
   skip: true  # [not linux64 or py<38]
   script:
     - {{ PYTHON }} setup.py build_cython
