@@ -1,5 +1,5 @@
 {% set name = "pyfuse3" %}
-{% set version = "3.4.1" %}
+{% set version = "3.4.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyfuse3-{{ version }}.tar.gz
-  sha256: 602f9c5f944bcdbd5e7f526c0e7f44af41970abedabc72d94ac16563e1b49209
+  sha256: 0a59031969c4ba51a5ec1b67f3c5c24f641a6a3f8119a86edad56debcb9084d9
 
 build:
   number: 0
